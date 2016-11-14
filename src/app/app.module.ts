@@ -1,6 +1,19 @@
 import { AppComponent } from './app.component';
 
-export const appModule = angular
-    .module('app', [])
-    .component('app', AppComponent)
+import { HeaderModule } from './header/';
+
+import { HomeModule } from './home/';
+import { AboutModule } from './about/';
+
+import { AppRouting } from './app.routing';
+
+export const AppModule = angular
+    .module('app', [
+        'ui.router',
+        HeaderModule,
+        HomeModule,
+        AboutModule
+    ])
+    .component('appRoot', AppComponent)
+    .config(AppRouting)
     .name;

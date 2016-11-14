@@ -1,4 +1,12 @@
-import 'angular';
+import * as angular from 'angular';
 
-import { appModule } from './app/app.module';
-angular.bootstrap(document, [appModule]);
+//const uiRouter = require('angular-ui-router');
+
+import uiRouter from 'angular-ui-router';
+
+import { AppModule } from './app/';
+
+angular.bootstrap(document, [
+    AppModule,
+    uiRouter
+]);
