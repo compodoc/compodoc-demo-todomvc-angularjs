@@ -50,6 +50,7 @@ module.exports = {
             },
             ui: false,
             online: false,
+            open: false,
             notify: false
         })
     ],
