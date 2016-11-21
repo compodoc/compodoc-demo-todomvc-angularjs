@@ -4,6 +4,7 @@ import { HeaderModule } from './header/';
 
 import { HomeModule } from './home/';
 import { AboutModule } from './about/';
+import { ListModule } from './list/';
 
 import { SharedModule } from './shared/';
 
@@ -14,6 +15,7 @@ export const AppModule = angular
         'ui.router',
         HeaderModule,
         HomeModule,
+        ListModule,
         AboutModule,
         SharedModule
     ])
