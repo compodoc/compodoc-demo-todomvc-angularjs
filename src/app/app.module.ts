@@ -5,6 +5,8 @@ import { HeaderModule } from './header/';
 import { HomeModule } from './home/';
 import { AboutModule } from './about/';
 
+import { SharedModule } from './shared/';
+
 import { AppRouting } from './app.routing';
 
 export const AppModule = angular
@@ -12,7 +14,8 @@ export const AppModule = angular
         'ui.router',
         HeaderModule,
         HomeModule,
-        AboutModule
+        AboutModule,
+        SharedModule
     ])
     .component('appRoot', AppComponent)
     .config(AppRouting)
