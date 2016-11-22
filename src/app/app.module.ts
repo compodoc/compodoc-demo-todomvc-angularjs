@@ -1,6 +1,7 @@
 import { AppComponent } from './app.component';
 
 import { HeaderModule } from './header/';
+import { FooterModule } from './footer/';
 
 import { HomeModule } from './home/';
 import { AboutModule } from './about/';
@@ -14,6 +15,7 @@ export const AppModule = angular
     .module('app', [
         'ui.router',
         HeaderModule,
+        FooterModule,
         HomeModule,
         ListModule,
         AboutModule,
